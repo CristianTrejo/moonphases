@@ -71,7 +71,27 @@ class MoonphaseController {
 
     getNewMoons({params, response}){}
 
-    getFullMoons({params, response}) {}
+    getFullMoons({params, response}) {
+        try {
+            this.validateYearParam(params.year)
+            var firstDate = moment(params.year + '-01-01')
+            var lastDate = moment(parseInt(params.year) + 1 + '-01-01')
+
+            var dates = []
+            for (var m = moment(firstDate); m.isBefore(lastDate); m.add(1, 'days')) {
+                let month = m.month() + 1
+                let day = m.date()
+                var moonAge = this.calculateMoonAge(params.year, month, day)
+                if (moonAge === 14) {
+                    dates.push(m.format('MMM Do'))
+                }
+            }
+
+            return response.json({ fullMoon: dates })
+        } catch (error) {
+            return response.status(400).json({ message: error.message })
+        }
+    }
 
 
 
