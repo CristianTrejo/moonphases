@@ -1,31 +1,68 @@
-# Adonis fullstack application
+# Moon Phases
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+_Moon phases challenge with a mini API in adonisjs framework_
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+## Getting Started 🚀
 
-## Setup
+_This instructions will let you to get a copy of the project working in your computer_
 
-Use the adonis command to install the blueprint
+Look **Running server** to know how to start de server.
 
-```bash
-adonis new yardstick
+
+### Pre-requisitos 📋
+
+_AdonisJs MUST be instaled to make this work_
+
+```
+npm i -g @adonisjs/cli
 ```
 
-or manually clone the repo and then run `npm install`.
+### Installation 🔧
 
+_Once you have AdonisJs working in your computer, execute the command_
 
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
 ```
+npm install
+```
+
+## Testing ⚙️
+
+_This is how run the project test cases_
+
+### Functional Tests 🔩
+
+_In the root of the project in the command line exec the next line_
+
+```
+adonis test
+```
+
+## Running Server 📦
+
+_To run the project in your machine just execute the next command in the root of te project in the cmd_
+
+```
+adonis serve
+```
+
+Or
+
+```
+adonis serve --dev
+```
+
+## Construido con 🛠️
+
+_The framework and the theory of astrology taken_
+
+* [AdonisJs](https://adonisjs.com/docs/4.1/installation) - The framework used
+* [La Güeb de Joaquín](http://www.joaquin.medina.name/web2008/documentos/divulgacion/astronomia/2010_08_14_FasesLuna.html) - Theory for calculations
+
+## Author ✒️
+
+* **Cristian Trejo** - *Creator* - [CristianTrejo](https://github.com/CristianTrejo)
+
+
+
+---
+⌨️ Always Learning 🤓❤️
