@@ -17,3 +17,4 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.get('/month-phases/month/:month/year/:year', 'MoonphaseController.getMontMoonPhases')
